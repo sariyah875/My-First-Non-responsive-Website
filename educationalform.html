@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            background: #3b82f6;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            background: white;
+            padding: 35px;
+            border-radius: 10px;
+            width: 800px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+           margin-left: 300px;
+           margin-top: 100px;
+        }
+        .form-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+        .form-group {
+            padding-left: 50px;
+            display: flex;
+            flex-direction: column;
+        }
+       
+        input {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }          
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<form class="container">
+    <h2 style="padding-left: 50px;">Registration</h2>
+
+    <p style="padding-left: 50px;">Personal Details</p>
+
+    <div class="form-row">
+        <div class="form-group">
+            <b>Full Name</b>
+            <input type="text" placeholder="Enter your name">
+        </div>
+        <div class="form-group">
+            <b>Date of Birth</b>
+            <input type="text" placeholder="Enter birth date">
+        </div>
+        <div class="form-group">
+            <b>Email</b>
+            <input type="text" placeholder="Enter your email">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <b>Mobile Number</b>
+            <input type="text" placeholder="Enter mobile number">
+        </div>
+        <div class="form-group">
+            <b>Gender</b>
+            <input type="text" placeholder="Enter your gender">
+        </div>
+        <div class="form-group">
+            <b>Occupation</b>
+            <input type="text" placeholder="Enter occupation">
+        </div>
+    </div>
+
+    <p style="padding-left: 50px;">Identity Details</p>
+
+    <div class="form-row">
+        <div class="form-group">
+            <b>ID Type</b>
+            <input type="text" placeholder="Enter ID type">
+        </div>
+        <div class="form-group">
+            <b>ID Number</b>
+            <input type="text" placeholder="Enter ID number">
+        </div>
+        <div class="form-group">
+            <b>Issue Authority</b>
+            <input type="text" placeholder="Enter issue authority">
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-group">
+            <b>Issue Date</b>
+            <input type="text" placeholder="Enter issue date">
+        </div>
+        <div class="form-group">
+            <b>Issue State</b>
+            <input type="text" placeholder="Enter issue state">
+        </div>
+        <div class="form-group">
+            <b>Expiry Date</b>
+            <input type="date" placeholder="Enter expiry date">
+        </div>
+    </div>
+
+    <button type="submit" >Next ➔</button>
+
+</form>
+
+</body>
+</html>

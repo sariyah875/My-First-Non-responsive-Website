@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Exact Hero Section</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      
+    }
+
+    body {
+      background-color: #f9f9f9;
+    }
+
+    .hero {
+      position: relative;
+      background: url('https://via.placeholder.com/1200x500') no-repeat center center/cover;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      padding: 2rem;
+    }
+
+    .overlay-box {
+      background-color: white;
+      padding: 2rem;
+      width: 400px;
+      border-radius: 8px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+    }
+
+    .overlay-box::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 6px;
+      width: 100%;
+      background-color: black;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .logos {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 1rem;
+    }
+
+    .logos img {
+      height: 24px;
+      width: auto;
+      object-fit: contain;
+    }
+
+    .overlay-box h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.8rem;
+      color: #222;
+    }
+
+    .overlay-box p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .tag {
+      background-color: #f2f2f2;
+      color: #444;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+  <section class="hero">
+    <div class="overlay-box">
+      <!-- Logos Row -->
+      <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/Udemy_logo.svg" alt="Udemy" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Coursera_logo.svg" alt="Coursera" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/EdX_logo.svg" alt="edX" />
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Skillshare_Logo.svg/512px-Skillshare_Logo.svg.png" alt="Skillshare" />
+      </div>
+
+      <!-- Heading and Paragraph -->
+      <h2>Welcome to Our Online Learning Center</h2>
+      <p>Join thousands of learners in exploring courses on development, design, language, marketing, and more – all from top instructors around the world.</p>
+
+      <!-- Tags -->
+      <div class="tags">
+        <div class="tag">Development</div>
+        <div class="tag">Design</div>
+        <div class="tag">Language</div>
+        <div class="tag">Marketing</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

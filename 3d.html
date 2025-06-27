@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film Making</title>
+    <style>
+body {
+
+         font-family: Arial, sans-serif;
+          background-color: rgba(251, 251, 251, 0.974);
+    }
+    .navbar {
+      background: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      text-align: center;
+      position: fixed;
+   
+    }
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 12px;
+      display: block;
+    }
+
+    .dropdown-menu,
+    .nested-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      list-style: none;
+      padding: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu li,
+    .nested-menu li {
+      width: 220px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nested-dropdown {
+      position: relative;
+    }
+
+    .nested-dropdown:hover .nested-menu {
+      display: block;
+      top: 0;
+      left: 100%;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+    }
+
+    .navbar ul li a:hover {
+      color: red;
+    }
+               
+    form{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 15px 50px   rgba(135, 206, 250, 0.5);
+        padding: 20px;
+        height:450px;
+        margin-top: 96px;
+        width: 500px;
+        margin-left: 30px;
+        border-radius: 8px;
+
+    }
+    .first-last-name input.first-name{
+        height: 40px;
+        width: 98;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    input.last-name{
+         height: 40px;
+        width: 98;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    input.email{
+        width: 390px;
+         height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    button{
+        height: 40px;
+        width: 100px;
+        margin-left: 50px;
+        border-radius: 5px;
+        color: white;
+        background-color: red;
+    }
+    button:hover{
+        background-color: blue;
+    }
+    .container{
+        display: flex;
+    }
+    span{
+        color: red;
+    }
+    h1.text{
+        float: right;
+        margin-top: 206px;
+        font-size: 58px;
+        margin-left: 107px;
+    }
+    h1.ms-office-course{
+        margin-left: 56px;
+        font-size: 46px;
+    }
+    p.paragraph{
+        text-align: justify;
+        font-size: x-large;
+        line-height: 30px;
+        margin-left: 56px;
+    }
+    img.image{
+      margin-left: 46px;
+    }
+    p{
+       text-align: justify;
+        font-size: large;
+        line-height: 30px;
+        margin-left: 46px;
+    }
+    li{
+       font-size: large;
+        line-height: 30px;
+        margin-left: 46px;
+    }
+    h1{
+      margin-left: 46px;
+    }
+    .images img{
+      gap: 20px;
+      border-radius: 5px;
+    }
+    </style>
+</head>
+<body>   <nav class="navbar">
+      <h1>Arman <span>Teacher</span></h1>
+    <ul class="nav-menu">
+      <li><a href="armantrachers.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li class="nested-dropdown">
+            <a href="#">Information Of Technology ▸</a>
+            <ul class="nested-menu">
+              <li><a href="http://127.0.0.1:5500/MS-office.html">Ms Office</a></li>
+              <li><a href="http://127.0.0.1:5500/ACIT.HTML">ACIT</a></li>
+              <li><a href="http://127.0.0.1:5500/ADIT.HTML">ADIT</a></li>
+              <li><a href="http://127.0.0.1:5500/web-designing.html">Web Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/computerized-accounting.html">Computerized Accounting</a></li>
+              <li><a href="http://127.0.0.1:5500/graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/full-stack-developer.html">Full Stack Developer</a></li>
+              <li><a href="http://127.0.0.1:5500/film-macking.html">Film Making</a></li>
+              <li><a href="http://127.0.0.1:5500/Digital-marketing.html">Digital Marketing Course</a></li>
+              <li><a href="http://127.0.0.1:5500/SEO.html">SEO</a></li>
+              <li><a href="http://127.0.0.1:5500/daraz.html">Daraz</a></li>
+              <li><a href="http://127.0.0.1:5500/SHOPIFY.HTML">Shopify</a></li>
+              <li><a href="http://127.0.0.1:5500/jwellery.html">Jewelry</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Engineering ▸</a>
+            <ul class="nested-menu">
+          <li><a href="http://127.0.0.1:5500/autocad.html">autocad</a></li>
+    <li><a href="http://127.0.0.1:5500/revit.html">revit</a></li>
+    <li><a href="http://127.0.0.1:5500/3d.html"> 3d Studio max</a></li>
+    <li><a href="http://127.0.0.1:5500/google-sketch.html">Google sketch</a></li>
+    <li><a href="http://127.0.0.1:5500/lemon.html">lemon</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">2D & 3D Animation ▸</a>
+               <ul  class="nested-menu">
+            <LI><a href="http://127.0.0.1:5500/blender.html">Blender</a></LI>
+    <li><a href="http://127.0.0.1:5500/mayas.html">Maya</a></li>
+    </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Game Design & Dev ▸</a>
+            <ul class="nested-menu">
+              <li><a href="unity.html">unity</a></li>
+              <li><a href="unreal.html">Unreal Engine Courses</a></li>
+             
+            </ul>
+          </li>
+        </ul>
+      </li>
+       <li><a href="aboutusofarmanteachers.html">About Us</a></li>
+      <li><a href="english-language-course-armanteachers.html">English Language Course</a></li>
+      <li><a href="Contact-Us-Armanteachers.html">Contact Us</a></li>
+      <li><a href="#">Software Download</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <div class="container">
+    <div class="form-section">             
+        <form>
+           <div class="first-last-name">
+             <input class="first-name" type="text" placeholder="First Name">
+             <input class="last-name" type="text" placeholder="Last Name">
+           </div>
+           <input type="email" class="email" placeholder="Email Address">
+           <br>
+           <input type="password" class="email" placeholder="Password">
+           <br>
+           <br>
+           <br>
+           <button>Enroll Now</button>
+        </form>
+    </div>
+    <div class="text-section">
+        <h1 class="text">Arman <span> Teacher </span> Institute <br>
+         Call Or <span> Enroll Now </span><br>
+         0341-2280528</h1>
+    </div>
+  </div>
+  <br><br><br><br><br>
+  <div class="container">
+    <div class="image-section">
+        <img class="image" src="https://armanteacher.com/images/81.jpeg" alt="" width="800px" style="margin-top: 78px;">
+    </div>
+    <div class="paragraph-section">
+        <h1 class="ms-office-course">Sketch Up</h1>
+        <p class="paragraph">Sketch Up is a 3D modeling computer program for a wide range of drawing applications such as architectural, interior design, landscape architecture, civil and mechanical engineering, film and video game design. It is available as a web-based application, Sketch Up Free,[4] and a paid version with additional functionality, Sketch Up Pro. Previously, a freeware version, Sketch Up Make, was also available. Sketch Up is owned by Trimble Inc., a mapping surveying and navigation equipment company.[9] There is an online library of free model assemblies (e.g. windows, doors, automobiles), 3D Warehouse, to which users may contribute models. The program includes drawing layout functionality, allows surface rendering in variable “styles”, supports third-party “plug-in” programs hosted on a site called Extension Warehouse to provide other capabilities (e.g. near photo-realistic rendering) and enables placement of its models within Google Earth.
+
+         <br>
+         <br>Duration: 1 Year
+         <br>Project Yes
+         <br>Per Month: 8000
+         <br>Certificate: Yes(Paid)</p>
+        </div>
+  </div>
+  <br>
+               <h1 class="font-weight-medium" style="font-weight: bold;">
+              
+             
+               Course Outline:-
+              </h1>
+              
+              
+            <ul>
+              <li>Introduction</li>
+              <ul>
+                <li>Principles of Interior Designing.</li>
+                <li>Measurement units.</li>
+
+              </ul>
+              <li>Getting started</li>
+              <ul>
+                <li>Software Interface</li>
+                <li>Using the Keyboard</li>
+                <li>Using the mouse</li>
+                <li>Basic commands</li>
+              </ul>
+              <li>Basic drawings</li>
+              <ul>
+                <li>Create shapes</li>
+                <li>Editing tools</li>
+                <li>Erasing objects</li>
+              </ul>
+              <li>Furniture</li>
+              <ul>
+                <li>sizing</li>
+                <li>placement</li>
+                <li>scaling</li>
+              </ul>
+              <li>Modification Tools</li>
+              <ul>
+              <li>Move</li>
+             <li>Rotate</li>
+              <li>Scale</li>
+              <li>Etc</li>
+              </ul>
+              <li>Components & Groups</li>
+              <ul>
+                <li>Printing</li>
+                <li>Printing component</li>
+                <li>Layout component</li>
+              </ul>
+               <li>Advance Modifying</li>
+               <ul>
+                 <li>Layers</li>                      
+              <li>Properties</li>
+              <li>Area</li>
+              <li>Distance</li>
+               </ul>
+                <li>Rendering</li>
+                <ul>
+                  <li>Paints</li>
+                  <li>Materials</li>
+                  <li>Interior Models</li>
+                </ul>
+                 <li>3D Warehouse</li>
+
+            </ul>
+<br><br><br>
+<h1 style="text-align: center;">Related To Sketch Up</h1>
+<br>
+<div class="images">
+<img src="https://armanteacher.com/image/40.jpeg" alt="" style="width: 460px; margin-left: 46px; height: 307px;">
+<img src="https://armanteacher.com/image/39.jpeg" alt="" style="width: 460px;">
+<img src="https://armanteacher.com/image/54.webp" alt="" style="width: 460px; height: 307px;">
+</div>
+<br><br><br><br><br>
+   <footer>
+  <div class="footer-container">
+    <div class="footer-section address">
+      <h3>Address:</h3>
+      <p>Address FL 4 /4 block 5 Gulshan e Iqbal<br>Karachi, Sindh 75300, Pakistan.</p>
+      <h3>Contact Info:</h3>
+      <p>0341-2280528</p>
+      <h3>Email:</h3>
+      <p>akramarman104@gmail.com</p>
+    </div>
+    <div class="footer-section pages">
+      <h3>Pages</h3>
+      <ul>
+        <li>About Us</li>
+        <li>English Language</li>
+        <li>Events</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="footer-section services">
+      <h3>Service</h3>
+      <ul>
+        <li>Web Designing</li>
+        <li>Documentation</li>
+        <li>Graphic Designing</li>
+        <li>2d & 3d Animation</li>
+      </ul>
+    </div>
+    <div class="footer-brand">
+      <h2>ArmanTeacher.</h2>
+      <div class="social-icons">
+        <!-- Add icons from FontAwesome or any other -->
+        <span>FB</span>
+        <span>IG</span>
+        <span>TW</span>
+        <span>IN</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright 2023 - 2024 - Arman Teacher || Design and Seo By RuqiaAlizada</p>
+  </div>
+</footer>
+<style>
+    footer {
+  background: #015c90;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+ 
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-brand {
+
+  margin: 10px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+</style>
+</body>
+</html>

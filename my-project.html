@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+           font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        .social-icons {
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+ 
+  }
+  
+  form{
+    background-color: rgb(255, 255, 255);
+   height: 30pc;
+    width: 70%;
+    padding-left: 50px;
+    margin: 50px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 20pc;
+    margin-top: 10pc;
+  }
+  h1{
+    color: turquoise;
+    text-align: center;
+  }
+  input{
+    background: transparent;
+    border: none;
+    margin-left: 70px;
+    border-left-width: 900px;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    margin-left: 108px;
+    width: 20pc;
+    color: white;
+  }
+  button{
+background: transparent;
+    border: 2px solid white;
+    color: rgb(255, 255, 255);
+    padding: 12px;
+    margin-top: 20px;
+    margin-left:148px;
+    width: 50%;
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .container{
+    display: inline;
+    display: flex;
+  }
+
+  .image-paragraph{
+    position: absolute;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+   background-color: turquoise;
+     margin-top: 10pc;
+     height: 440px;
+     border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      width: 400px;
+  }
+ 
+  @media screen and (max-width:1000px) {
+        .comtainer{
+            display: block;
+        }
+        form{
+            margin-left: 700px;
+            width: 600px;
+        }
+        img{
+            width: 800px;
+        }
+      }
+      button.signup-btn{
+        margin-left: 40px;
+        width: 200px;
+      }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="input">
+        <form>
+            <h1>Creat Account</h1>
+             <br><br>
+             <input type="text" placeholder="Name">
+             <br><br>
+            <input type="email" placeholder="Email Address" required/>
+            <br><br><br>
+            <input type="password" placeholder="Password" required/>
+             <br><br><br>
+            <button class="btn" style="background-color: tu;">Sign Up</button>
+        </form>
+    </div>
+    <div class="image">
+        <div class="image-paragraph">
+        <h2>Welcome Friend</h2>
+        <p>To keep connected with us plz <br> login with your personal info</p>
+        <button class="signup-btn">Sign in</button>
+      </div>
+    </div>
+   </div> 
+</body>
+</html>

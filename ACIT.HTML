@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACIT</title>
+    <STyle>              body {
+         margin-left: 50px;
+         margin-right: 60px;
+         font-family: Arial, sans-serif;
+          background-color: rgba(251, 251, 251, 0.974);
+          overflow-x: hidden;
+
+    }
+    .navbar {
+      background: #ffffff;
+      padding: 10px 20px;
+      display: flex;
+      text-align: center;
+      position: fixed;
+      margin-left: 150px;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 12px;
+      display: block;
+    }
+
+    .dropdown-menu,
+    .nested-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      list-style: none;
+      padding: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu li,
+    .nested-menu li {
+      width: 220px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nested-dropdown {
+      position: relative;
+    }
+
+    .nested-dropdown:hover .nested-menu {
+      display: block;
+      top: 0;
+      left: 100%;
+    }
+
+    .navbar ul li a:hover {
+      color: red;
+    }
+    form{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0 15px 50px   rgba(135, 206, 250, 0.5);
+        padding: 20px;
+        height:450px;
+        margin-top: 96px;
+        width: 500px;
+        margin-left: 30px;
+        border-radius: 8px;
+
+
+    }
+    .first-last-name input.first-name{
+        height: 40px;
+        width: 98;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    input.last-name{
+         height: 40px;
+        width: 98;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    input.email{
+        width: 390px;
+         height: 40px;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-left: 50px;
+    }
+    button{
+        height: 40px;
+        width: 100px;
+        margin-left: 50px;
+        border-radius: 5px;
+        color: white;
+        background-color: red;
+    }
+    button:hover{
+        background-color: blue;
+    }
+    .container{
+        display: flex;
+    }
+    span{
+        color: red;
+    }
+    h1.text{
+        float: right;
+        margin-top: 206px;
+        font-size: 58px;
+        margin-left: 107px;
+    }
+    .container{
+        display: flex;
+    }
+    p{
+        text-align: justify;
+     }
+     .headings-paragraphs-and-lists{
+        margin-left: 46px;
+     }
+     .images{
+        display: flex;
+        gap: 20px;
+     }
+ </STyle>
+</head>
+<body>
+    <nav class="navbar">
+      <h1>Arman <span>Teacher</span></h1>
+    <ul class="nav-menu">
+      <li><a href="armantrachers.html">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li class="nested-dropdown">
+            <a href="#">Information Of Technology ▸</a>
+            <ul class="nested-menu">
+              <li><a href="http://127.0.0.1:5500/MS-office.html">Ms Office</a></li>
+              <li><a href="http://127.0.0.1:5500/ACIT.HTML">ACIT</a></li>
+              <li><a href="http://127.0.0.1:5500/ADIT.HTML">ADIT</a></li>
+              <li><a href="http://127.0.0.1:5500/web-designing.html">Web Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/computerized-accounting.html">Computerized Accounting</a></li>
+              <li><a href="http://127.0.0.1:5500/graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/full-stack-developer.html">Full Stack Developer</a></li>
+              <li><a href="http://127.0.0.1:5500/film-macking.html">Film Making</a></li>
+              <li><a href="http://127.0.0.1:5500/Digital-marketing.html">Digital Marketing Course</a></li>
+              <li><a href="http://127.0.0.1:5500/SEO.html">SEO</a></li>
+              <li><a href="http://127.0.0.1:5500/daraz.html">Daraz</a></li>
+              <li><a href="http://127.0.0.1:5500/SHOPIFY.HTML">Shopify</a></li>
+              <li><a href="http://127.0.0.1:5500/jwellery.html">Jewelry</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Engineering ▸</a>
+            <ul class="nested-menu">
+          <li><a href="http://127.0.0.1:5500/autocad.html">autocad</a></li>
+    <li><a href="http://127.0.0.1:5500/revit.html">revit</a></li>
+    <li><a href="http://127.0.0.1:5500/3d.html"> 3d Studio max</a></li>
+    <li><a href="http://127.0.0.1:5500/google-sketch.html">Google sketch</a></li>
+    <li><a href="http://127.0.0.1:5500/lemon.html">lemon</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">2D & 3D Animation ▸</a>
+               <ul  class="nested-menu">
+            <LI><a href="http://127.0.0.1:5500/blender.html">Blender</a></LI>
+    <li><a href="http://127.0.0.1:5500/mayas.html">Maya</a></li>
+    </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Game Design & Dev ▸</a>
+            <ul class="nested-menu">
+              <li><a href="unity.html">unity</a></li>
+              <li><a href="unreal.html">Unreal Engine Courses</a></li>
+             
+            </ul>
+          </li>
+        </ul>
+      </li>
+       <li><a href="aboutusofarmanteachers.html">About Us</a></li>
+      <li><a href="english-language-course-armanteachers.html">English Language Course</a></li>
+      <li><a href="Contact-Us-Armanteachers.html">Contact Us</a></li>
+      <li><a href="#">Software Download</a></li>
+    </ul>
+  </nav>
+  <br>
+  <br>
+  <div class="container">
+    <div class="form-section">             
+        <form>
+           <div class="first-last-name">
+             <input class="first-name" type="text" placeholder="First Name">
+             <input class="last-name" type="text" placeholder="Last Name">
+           </div>
+           <input type="email" class="email" placeholder="Email Address">
+           <br>
+           <input type="password" class="email" placeholder="Password">
+           <br>
+           <br>
+           <br>
+           <button>Enroll Now</button>
+        </form>
+    </div>
+    <div class="text-section">
+        <h1 class="text">Arman <span> Teacher </span> Institute <br>
+         Call Or <span> Enroll Now </span><br>
+         0341-2280528</h1>
+    </div>
+  </div>
+  <div class="container">
+    <div class="img-section">
+        <img  style="margin: 65px;"src="https://armanteacher.com/images/43.png" alt="">
+    </div>
+    <div class="text-section">
+        <h1 style="margin-top: 70px;">ACIT Advanced Certificate In Information Technology Course:-</h1>
+         <p style="margin-top: 40px; font-size: 20px; line-height: 30px;">As of my last update in September 2021,Advanced Certificate Information Technology includes a variety of applications, with some of the most common ones being:
+<br><br>
+Duration: 04 Months
+<br>
+Project / Assignments: Yes
+<br>
+Per Month: 3000
+<br>
+Certificate: Yes(Paid)
+</p>
+    </div>
+  </div>
+<div class="headings-paragraphs-and-lists">
+  <h1>Learn Advanced Cerficate In Information Technology Course:-</h1>
+<p>By taking this complete course from Basic to Advance you can learn the features of ACIT including practical training of ACIT like to create professional-looking documents, spreadsheets, and presentations,Designing, Calculations,And Much More and also some additional advanced features as per the need and performance of student. After this course, you will be expert to use these powerful new tools of ACIT suite for collecting, analyzing, and sharing information. As this training is from Professional level to Advance, you can also able to work on previous versions that are MS-office, Word,Excel,PowerPoint .This course carries 12-modules by which you can shape your skills smartly, quickly and easily, and expose the power of ACIT to improve your efficiency, productivity and work at home or office place. Each designed module is prepared for fast and easy education with real-world lessons and hands-on exercises.
+</p>
+<h1>Course Content:-</h1>
+<ul>
+    <li>Hardware & Software</li>
+    <li>Internet and Email</li>
+    <li>Information Of It</li>
+    <li>Word</li>
+    <li>Excel</li>
+    <li>PowerPoint</li>
+    <li>Photoshop</li>
+    <li>CarolDraw</li>
+    <li>Html</li>
+    <li>Css</li>
+</ul>
+
+<h1>Modules Includes:-</h1>
+<ul>
+    <li>Introduction to the Data Model and Relationships in Excel</li>
+    <li>Learn how to create remarkable reports for school or business</li>
+    <li>Practice Organizational Documentation Process</li>
+    <li>Create finance, funds, budgets and track expenses</li>
+    <li>Form and manage class work</li>
+    <li>Create expert-quality presentations professionally</li>
+    <li>Build projects in notebooks</li>
+    <li>Manage sales and invoicing for your small business</li>
+    <br>
+    <li>Admin Officer</li>
+    <li>Data Entry Operator</li>
+    <li>Business Office Director</li>
+    <li>Manager Office Documentations</li>
+    <li>Office Coordinator</li>
+    <li>Professional I.T. Instructor / Trainer</li>
+    <li>Efficient Receptionist</li>
+    <li>Office Assistant</li>
+</ul>
+</div>
+<br><br><br>
+<h1 style="text-align: center;">Related To ACIT Advanced Certificate In Information <br> Technology</h1>
+<br>
+<div class="images">
+    <img src="https://armanteacher.com/image/17.jpeg" alt="" width="480px" height="450px" style="margin-left: 36px;">
+    <img src="https://armanteacher.com/image/18.jpeg" alt="" width="480px" height="450px">
+    <img src="https://armanteacher.com/image/20.jpeg" alt="" width="480px" height="450px" style="margin-right: 86px;">
+</div>
+<br><br><br><br><br>
+   <footer>
+  <div class="footer-container">
+    <div class="footer-section address">
+      <h3>Address:</h3>
+      <p>Address FL 4 /4 block 5 Gulshan e Iqbal<br>Karachi, Sindh 75300, Pakistan.</p>
+      <h3>Contact Info:</h3>
+      <p>0341-2280528</p>
+      <h3>Email:</h3>
+      <p>akramarman104@gmail.com</p>
+    </div>
+    <div class="footer-section pages">
+      <h3>Pages</h3>
+      <ul>
+        <li>About Us</li>
+        <li>English Language</li>
+        <li>Events</li>
+        <li>Contact Us</li>
+      </ul>
+    </div>
+    <div class="footer-section services">
+      <h3>Service</h3>
+      <ul>
+        <li>Web Designing</li>
+        <li>Documentation</li>
+        <li>Graphic Designing</li>
+        <li>2d & 3d Animation</li>
+      </ul>
+    </div>
+    <div class="footer-brand">
+      <h2>ArmanTeacher.</h2>
+      <div class="social-icons">
+        <!-- Add icons from FontAwesome or any other -->
+        <span>FB</span>
+        <span>IG</span>
+        <span>TW</span>
+        <span>IN</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>Copyright 2023 - 2024 - Arman Teacher || Design and Seo By RuqiaAlizada</p>
+  </div>
+</footer>
+<style>
+    footer {
+  background: #015c90;
+  color: white;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-section {
+ 
+  margin: 10px;
+}
+
+.footer-section h3 {
+  margin-bottom: 10px;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 5px 0;
+}
+
+.footer-brand {
+
+  margin: 10px;
+}
+
+.footer-brand h2 {
+  font-size: 24px;
+}
+
+.social-icons span {
+  margin-right: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+}
+</style>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Arman Teacher Navbar</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background: #f8f8f8;
+      padding: 10px 20px;
+    }
+
+    .nav-menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .nav-menu > li {
+      position: relative;
+    }
+
+    .nav-menu a {
+      text-decoration: none;
+      color: #333;
+      padding: 8px 12px;
+      display: block;
+    }
+
+    .dropdown-menu,
+    .nested-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      list-style: none;
+      padding: 0;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .dropdown-menu li,
+    .nested-menu li {
+      width: 220px;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .nested-dropdown {
+      position: relative;
+    }
+
+    .nested-dropdown:hover .nested-menu {
+      display: block;
+      top: 0;
+      left: 100%;
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul class="nav-menu">
+      <li><a href="#">Home</a></li>
+      <li class="dropdown">
+        <a href="#">Courses ▾</a>
+        <ul class="dropdown-menu">
+          <li class="nested-dropdown">
+            <a href="#">Information Of Technology ▸</a>
+            <ul class="nested-menu">
+              <li><a href="http://127.0.0.1:5500/MS-office.html">Ms Office</a></li>
+              <li><a href="http://127.0.0.1:5500/ACIT.HTML">ACIT</a></li>
+              <li><a href="http://127.0.0.1:5500/ADIT.HTML">ADIT</a></li>
+              <li><a href="http://127.0.0.1:5500/web-designing.html">Web Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/computerized-accounting.html">Computerized Accounting</a></li>
+              <li><a href="http://127.0.0.1:5500/graphic-designing.html">Graphic Designing</a></li>
+              <li><a href="http://127.0.0.1:5500/full-stack-developer.html">Full Stack Developer</a></li>
+              <li><a href="http://127.0.0.1:5500/film-macking.html">Film Making</a></li>
+              <li><a href="http://127.0.0.1:5500/Digital-marketing.html">Digital Marketing Course</a></li>
+              <li><a href="http://127.0.0.1:5500/SEO.html">SEO</a></li>
+              <li><a href="http://127.0.0.1:5500/daraz.html">Daraz</a></li>
+              <li><a href="http://127.0.0.1:5500/SHOPIFY.HTML">Shopify</a></li>
+              <li><a href="http://127.0.0.1:5500/jwellery.html">Jewelry</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Engineering ▸</a>
+            <ul class="nested-menu">
+          <li><a href="http://127.0.0.1:5500/autocad.html">autocad</a></li>
+    <li><a href="http://127.0.0.1:5500/revit.html">revit</a></li>
+    <li><a href="http://127.0.0.1:5500/3d.html"> 3d Studio max</a></li>
+    <li><a href="http://127.0.0.1:5500/google-sketch.html">Google sketch</a></li>
+    <li><a href="http://127.0.0.1:5500/lemon.html">lemon</a></li>
+            </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">2D & 3D Animation ▸</a>
+            <ul  class="nested-menu">
+            <LI><a href="http://127.0.0.1:5500/blender.html">Blender</a></LI>
+    <li><a href="http://127.0.0.1:5500/mayas.html">Maya</a></li>
+    </ul>
+          </li>
+          <li class="nested-dropdown">
+            <a href="#">Game Design & Dev ▸</a>
+            <ul class="nested-menu">
+              <li><a href="#">Game Programming</a></li>
+              <li><a href="#">Game Art Design</a></li>
+              <li><a href="#">Unity 3D</a></li>
+              <li><a href="#">Game Testing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">English Language Course</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Software Download</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fORM</title>
+    <STYLE>
+        body{
+           background-image: linear-gradient(rgb(188, 121, 237),pink);
+           background-repeat: no-repeat;
+           background-size: cover;
+           height: 100vh;
+           margin: 0;
+           font-family: Arial, Helvetica, sans-serif;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+        }
+       input{
+        background: transparent;
+       border: none;
+        border-bottom: 2px solid rgb(255, 255, 255);
+        margin-left: 30px;
+       }
+       .comtainer{
+        display: flex;
+       }
+       form{
+        background-color: black;
+        color: white;
+        height: 455px;
+       margin-right: 595px;
+       width: 50%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+       }
+      img{
+        width: 50%;
+        height: 470px;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        margin-left: 400px;
+      }
+      h2{
+        margin-left: 30px;
+      }
+      @media screen and (max-width:1000px) {
+        .comtainer{
+            display: block;
+        }
+        form{
+            margin-left: 700px;
+            width: 600px;
+        }
+        img{
+            width: 800px;
+        }
+      }
+    </STYLE>
+</head>
+<body>
+    <div class="comtainer">
+        <div class="image-section">
+            <img src="https://i.pinimg.com/736x/3d/ea/89/3dea89148a301b2ade39b68975f0cf67.jpg" alt="">
+        </div>
+        <div class="form-section">
+            <form>
+                <br>
+                <br>
+                <h2>Registration Info</h2>
+                <input type="text" placeholder="Name">
+                <br>
+                <br><br>
+                <input type="text" placeholder="Birthdate"  📅>
+                <br><br><br>
+                <input type="text" placeholder="Gender">
+                <br><br><br>
+                <input type="email" placeholder="Email">
+                <br><br><br>
+                <input type="text"placeholder="phone">
+                <br>
+                <br><br>
+                <button style="background-color: rgba(0, 255, 0, 0.567); height: 30px; width: 100px; border-radius: 10px; color: white; margin-left: 20px;"><b>Submit</b></button>
+                <br><br><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

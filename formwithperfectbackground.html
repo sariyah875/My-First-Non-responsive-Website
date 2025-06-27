@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+body{
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('https://marketplace.canva.com/EAFOQYDNpTY/2/0/1600w/canva-brown-black-good-morning-facebook-post-fhP2g4gZX1M.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    background-position: center;
+
+}
+    
+       header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 20px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99;
+       }
+    .logo{
+        font-size: 2em;
+        color: rgb(255, 255, 255);
+        user-select: none;
+    }
+    .navigation{
+        position: relative;
+        font-size: 1.12em;
+        color: #ffffffff;
+        text-decoration: none;
+        font-weight: 500;
+        margin-left: 40px;
+    }
+    .navigation .btnlogin-popup{
+        width: 130px;
+        height: 50px;
+        background: transparent;
+        border: 2px solid #ffffffff;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-size: 1.1em;
+        color: white;
+        font-weight: 500;
+        margin-left: 40px;
+        transition: 0.5s;
+    }
+    .navigation .btnlogin-popup:hover{
+        background: #ffffffff;
+        color: #162938;
+    }
+    .navigation a::after{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        width: 100%;
+        height: 3px;
+        background: white;
+        border-radius: 5px;
+        transform-origin: right;
+       transform: scaleX(0);
+       transition: transform .5s;
+    }
+    .navigation a:hover::after{
+        transform: scaleX(1);
+        transform-origin: left;
+
+    }
+    .wrapper{
+        position: relative;
+        width: 400px;
+        height: 440px;
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, .5);
+        border-radius: 20px;
+        backdrop-filter: blur(20px);
+        box-shadow: 0 0 30px black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper .formboxlogin{
+        width: 100%;
+        padding: 40px;
+    }
+    .formboxlogin H2{
+        font-size: 2em;
+        color: #162938;
+        text-align: center;
+    }
+    .input-box{
+        position: relative;
+        width: 100%;
+        height: 50px;
+        border-bottom: 2px solid #162938;
+        margin: 30px 0;
+    }
+    .input-box label{
+        position: absolute;
+        top: 50%;
+        left: 5px;
+        transform: translateY(-50%);
+        font-size: 1em;
+        color: #162938;
+        font-weight: 500;
+        pointer-events: none;
+    }
+    .input-box input{
+        width: 100%;
+        height: 100%;
+        background: transparent;
+        border: none;
+        outline: none;
+        font-size: 1em;
+        color: #162938;
+        font-weight: 600px;
+    }
+    .remoffor{
+        font-size: .9em;
+        color: #162938;
+        font-weight: 500;
+        margin: -15 0 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .remoffor label input{
+        accent-color: #162938;
+        margin-right: 3px;
+    }
+    .remoffor a{
+        color: #162938;
+        text-decoration: none;
+    }
+    .remoffor a:hover{
+        text-decoration: underline;
+    }
+    .btn{
+        width: 100%;
+        height: 45px;
+        background-color: #162938;
+        border: none;
+        outline: none;
+        border-radius: 8px;
+        color: aliceblue;
+        cursor: pointer;
+    }
+    </style>
+</head>
+<body>
+  <header>
+    <h2 class="logo">Logo</h2>
+    <nav class="navigation">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <button class="btnlogin-popup">Login</button>
+    </nav>
+  </header>
+ <div class="wrapper">
+    <div class="formboxlogin">
+        <h2>Login</h2>
+          <form action="#">
+            <div class="input-box">
+                <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Email</label>
+            </div>
+            <div class="input-box">
+                <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>password</label>
+            </div>
+            <div class="remoffor">
+                <label><input type="checkbox">remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+            <button type="submit"class= "btn">Login</button>
+            <div class="login-regester"><p>Dont have an account?</p>
+                <a href="#" class="regester-link">Regeister</a>
+            </div>
+          </form>
+    </div>
+ </div>
+ <script src="script.js"></script>
+ <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.esm.js"></script>
+ <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons.js"></script>
+</body>
+</html>
